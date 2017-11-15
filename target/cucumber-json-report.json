@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Input valid data and register in webshop",
+        "description": "",
+        "id": "register-as-a-new-customer-to-webshop;input-valid-data-and-register-in-webshop",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1184283581,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on login page",
+            "match": {
+              "location": "RegistrationFeatureSteps.iAmOnRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.ArrayIndexOutOfBoundsException: 0\r\n\tat org.codehaus.groovy.runtime.BytecodeInterface8.objectArrayGet(BytecodeInterface8.java:363)\r\n\tat resources.webUtils.Wrappers.getScenarioTitle(Wrappers.groovy:303)\r\n\tat resources.webUtils.Wrappers.takeScreenshot(Wrappers.groovy:156)\r\n\tat resources.webUtils.Wrappers.click(Wrappers.groovy:53)\r\n\tat resources.webUtils.Wrappers$click.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)\r\n\tat groovy.page.object.models.RegistrationPage.clickRegister(RegistrationPage.groovy:78)\r\n\tat groovy.page.object.models.RegistrationPage$clickRegister.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)\r\n\tat groovy.stepdefinitions.RegistrationFeatureSteps.clickRegisterButton(RegistrationFeatureSteps.groovy:32)\r\n\tat ✽.Enter New Customer registration through log in page(src/test/resources/features/registration.feature:6)\r\n",
+              "duration": 1102452344711,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Enter New Customer registration through log in page",
+            "match": {
+              "location": "RegistrationFeatureSteps.clickRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Fill all mandatory data",
+            "match": {
+              "location": "RegistrationFeatureSteps.registerDataInput()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Click on register button",
+            "match": {
+              "location": "RegistrationFeatureSteps.clickConfirmRegistrationButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Successful registration as a new customer",
+            "match": {
+              "location": "RegistrationFeatureSteps.successfulRegistrationConfirmation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register as a new customer to webshop",
+    "description": "",
+    "id": "register-as-a-new-customer-to-webshop",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/registration.feature"
+  }
+]

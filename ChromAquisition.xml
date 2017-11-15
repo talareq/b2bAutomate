@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chrome Aquisition">
+    <parameter name="browser"  value="2"/>
+    <listeners>
+        <listener class-name="groovy.listeners.FailListener"></listener>
+    </listeners>
+    <test name="Run All Regresion on Chrome">
+        <classes>
+            <class name="groovy.AquisitionRunner"></class>
+            <!-- <class name="main.AnotherRunner"></class> This class could be used to run multiple runner classes-->
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
